@@ -7,3 +7,11 @@ function addHabit() {
         body: JSON.stringify({name})
     });
 }
+
+function completeHabit(name) {
+    fetch("/complete", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({name})
+    });
+}

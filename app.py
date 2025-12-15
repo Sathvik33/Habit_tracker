@@ -24,5 +24,14 @@ def add():
     save(data)
     return jsonify(data)
 
+@app.route("/complete", methods=["POST"])
+def complete():
+    data = load()
+    name = request.json["name"]
+    data[name] = True
+    save(data)
+    return jsonify(data)
+
 if __name__ == "__main__":
     app.run(debug=True)
+
