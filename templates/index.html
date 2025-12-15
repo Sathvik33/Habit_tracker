@@ -2,17 +2,30 @@
 <html>
 <head>
     <title>Habit Tracker</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-<h1>Habit Tracker</h1>
+<div class="container">
+    <h1>Habit Tracker</h1>
 
-<input id="habitInput" placeholder="Enter habit">
-<button onclick="addHabit()">Add Habit</button>
+    <p class="info">
+        Add your daily habits and keep track of your progress.  
+        Check the box when a habit is completed and delete habits you no longer need.
+    </p>
 
-<ul id="habitList"></ul>
+    <div class="input-row">
+        <input id="habitInput" placeholder="Enter a new habit">
+        <button onclick="addHabit()">Add</button>
+    </div>
 
-<script src="/static/script.js"></script>
+    <ul id="habitList"></ul>
+
+    <p class="hint">
+        Tip: Click the checkbox to mark a habit as completed.
+    </p>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

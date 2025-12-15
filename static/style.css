@@ -1,0 +1,235 @@
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.container {
+    background: #ffffff;
+    width: 400px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input + button row */
+.input-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* Add button */
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+/* Habit list */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f7f7;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+/* Habit text */
+li span {
+    flex: 1;
+    margin-left: 8px;
+}
+
+/* Completed habit */
+li input:checked + span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Delete button */
+li button {
+    background: #e53e3e;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+li button:hover {
+    background: #c53030;
+}
+
+.info {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.hint {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 15px;
+}
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;   /* 🔥 key change */
+    padding-top: 60px;         /* 🔥 pushes card down nicely */
+}
+
+/* Main card */
+.container {
+    background: white;
+    width: 420px;
+    padding: 25px 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Description text */
+.info {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;   /* 🔥 spacing below description */
+    line-height: 1.5;
+}
+
+/* Input + button row */
+.input-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;   /* 🔥 space before list */
+}
+
+input {
+    flex: 1;
+    padding: 9px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* Add button */
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+/* Habit list */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Each habit item */
+li {
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+
+/* Habit text */
+li span {
+    flex: 1;
+    margin-left: 8px;
+}
+
+/* Completed habit */
+li input:checked + span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Delete button */
+li button {
+    background: #e53e3e;
+    font-size: 12px;
+    padding: 5px 8px;
+}
+
+li button:hover {
+    background: #c53030;
+}
+
+/* Tip text */
+.hint {
+    margin-top: 25px;      /* 🔥 pushes it to bottom */
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+}
+    
